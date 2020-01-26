@@ -7,6 +7,6 @@ EXPOSE 5000
 RUN pip install pymongo
 RUN pip install flask
 
-copy . ./collection
+COPY . ./collection
 
 CMD ["export FLASK_APP=./collection/rest-serv.py; flask run"]
