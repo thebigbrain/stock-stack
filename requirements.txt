@@ -1,0 +1,12 @@
+elasticsearch
+requests
+openpyxl
+pandas
+numpy
+xlrd
+http-crawler
+psycopg2
+dataset
+pymongo==3.10.1
+eve
+flask
