@@ -6,7 +6,8 @@ EXPOSE 5000
 
 RUN pip install pymongo
 RUN pip install flask
+RUN pip install uwsgi
 
 COPY . ./collection
 
-CMD ["export FLASK_APP=./collection/rest-serv.py; flask run"]
+#CMD sh -c "uwsgi --http 0.0.0.0:5000 --module collection.rest-serv:app"
